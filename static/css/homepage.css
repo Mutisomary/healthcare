@@ -1,0 +1,24 @@
+.right-image {
+    float: right;
+    border-radius: 7%;
+    width: 70%; /* Adjust width as needed */
+    height: 100%; /* Extends image to the bottom */
+    background: transparent;
+    object-fit: cover;
+}
+
+.content {
+    overflow: hidden; /* Clear the float */
+}
+
+.home-page {
+    background-color: rgb(125, 75, 67);
+    height: 100vh;
+    overflow: auto; /* Ensures parent contains floated elements */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
